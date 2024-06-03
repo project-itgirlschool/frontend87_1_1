@@ -53,4 +53,10 @@ body {
   margin-top: 32px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=index.css.map */
