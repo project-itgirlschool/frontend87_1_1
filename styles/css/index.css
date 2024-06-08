@@ -19,6 +19,159 @@ body {
   color: #fff;
 }
 
+.header {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header_welcometo {
+  font-family: var(--main-font);
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header_luxury {
+  font-family: var(--secondary-font);
+  font-size: 154px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.07em;
+}
+
+.hotels {
+  font-family: var(--secondary-font);
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.4em;
+}
+
+.book_your_stay {
+  font-family: var(--main-font);
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header_booknow_wrap_button {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 1px;
+  width: 268px;
+  height: 78px;
+}
+
+.header_booknow_img {
+  width: 203px;
+  height: 29px;
+}
+
+.nav_link {
+  font-family: var(--main-font);
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.header_logo_img {
+  width: 256px;
+  height: 149px;
+}
+
+h2 {
+  font-family: var(--main-font);
+  font-size: 3.2vw;
+  font-weight: 400px;
+  line-height: 43.88px;
+  border: 0.5px;
+}
+
+.main {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+  padding: 5rem 0;
+}
+
+.contentWrapper {
+  border-left: 2px solid #14274A;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.main .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.main .imgWrapper:hover img {
+  transform: scale(1.25);
+}
+
+.main .contentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.main .contentWrapper span.textWrapper {
+  font-family: var(--main-font);
+  display: block;
+  font-size: 3.5vw;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.main .contentWrapper p {
+  font-family: var(--main-font);
+  font-size: 2vw;
+  line-height: 24.38px;
+  padding-bottom: 25px;
+}
+
+.main .contentWrapper a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--button-color);
+  color: white;
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  user-select: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 865px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .main .contentWrapper {
+    padding-left: 0;
+  }
+  .contentWrapper {
+    border-left: hidden;
+  }
+}
 .testimonials {
   margin: 0 auto;
   max-width: 800px;
