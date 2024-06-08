@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .testimonials_title {
@@ -155,7 +156,7 @@ footer {
 
 .email-form input {
   padding: 10px;
-  border: 2px solid #E0B973;
+  border: 2px solid #e0b973;
   border-radius: 4px;
   font-size: 1rem;
   width: 200px;
@@ -165,9 +166,9 @@ footer {
 
 .email-form button {
   padding: 10px 20px;
-  border: 2px solid #E0B973;
+  border: 2px solid #e0b973;
   border-radius: 4px;
-  background-color: #E0B973;
+  background-color: #e0b973;
   color: #14274a;
   font-size: 1rem;
   cursor: pointer;
