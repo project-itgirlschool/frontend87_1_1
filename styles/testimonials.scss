@@ -6,20 +6,20 @@
 }
 
 .testimonials_title {
-  font-size: 60px;
+  font-size: calc(20px + (20 + 20 * 0.7) * (100vw - 320px) / 1600);
   font-weight: 700;
   margin: 0;
 }
 
 .testimonials_quote {
-  font-size: 30px;
+  font-size: calc(18px + (18 + 18 * 0.7) * (100vw - 320px) / 1600);
   font-weight: 400px;
   margin-top: 8px;
   margin-bottom: 0;
 }
 
 .testimonials_names {
-  font-size: 25px;
+  font-size: calc(16px + (16 + 16 * 0.7) * (100vw - 320px) / 1600);
   font-weight: 400px;
   margin: 8px;
 }

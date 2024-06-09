@@ -20,6 +20,7 @@ body {
 }
 
 .header {
+  margin: 0 auto;
   background-color: black;
   width: 100%;
   height: 100vh;
@@ -180,20 +181,20 @@ h2 {
 }
 
 .testimonials_title {
-  font-size: 60px;
+  font-size: calc(20px + 34 * (100vw - 320px) / 1600);
   font-weight: 700;
   margin: 0;
 }
 
 .testimonials_quote {
-  font-size: 30px;
+  font-size: calc(18px + 30.6 * (100vw - 320px) / 1600);
   font-weight: 400px;
   margin-top: 8px;
   margin-bottom: 0;
 }
 
 .testimonials_names {
-  font-size: 25px;
+  font-size: calc(16px + 27.2 * (100vw - 320px) / 1600);
   font-weight: 400px;
   margin: 8px;
 }
@@ -466,6 +467,11 @@ body {
   gap: 30px;
 }
 
+.rooms-and-rates_title_text {
+  display: flex;
+  flex-direction: column;
+}
+
 .rooms-and-rates_title {
   width: 100%;
   font-weight: 700;
@@ -477,12 +483,11 @@ body {
 
 .rooms-and-rates_text {
   max-width: 1305px;
-  max-height: 107px;
   font-weight: 400;
   font-size: calc(16px + 8.5 * (100vw - 320px) / 1600);
   text-align: center;
   color: var(--text-color);
-  margin: 0 auto;
+  margin: 20px 30px auto;
 }
 
 .rooms-and-rates_wrapper {
@@ -589,7 +594,7 @@ body {
 }
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }

@@ -16,6 +16,11 @@ body {
   gap: 30px;
 }
 
+.rooms-and-rates_title_text {
+  display: flex;
+  flex-direction: column;
+}
+
 .rooms-and-rates_title {
   width: 100%;
   font-weight: 700;
@@ -27,12 +32,11 @@ body {
 
 .rooms-and-rates_text {
   max-width: 1305px;
-  max-height: 107px;
   font-weight: 400;
   font-size: calc(16px + (5 + 5 * 0.7) * (100vw - 320px) / 1600);
   text-align: center;
   color: var(--text-color);
-  margin: 0 auto;
+  margin: 20px 30px auto;
 }
 
 .rooms-and-rates_wrapper {
