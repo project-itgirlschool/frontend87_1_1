@@ -9,7 +9,9 @@
   --text-color: #14274a;
   --button-color: #e0b973;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--main-font);
   background-color: var(--background-color);
@@ -18,3 +20,6 @@ body {
 .a {
   color: #fff;
 }
+
+//media sizes
+$phone-size: 425px;
