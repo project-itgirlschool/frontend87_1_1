@@ -60,6 +60,10 @@
   color: #fff;
 }
 
+.header_booknow {
+  display: flex;
+  align-items: center;
+}
 .header_booknow_wrap_button {
   background-color: var(--button-color);
   border: none;
@@ -67,6 +71,7 @@
   width: 268px;
   height: 78px;
   display: flex;
+
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -146,8 +151,19 @@
   display: none;
 }
 
+/* стили планшета */
+@media screen and (max-width: $tablet-size) {
+  .header {
+    background-position: center;
+  }
+}
+
 /* стили мобилки */
 @media screen and (max-width: $phone-size) {
+  .header {
+    background-position: center;
+  }
+
   .header_scroll_name {
     display: none;
   }

@@ -87,6 +87,11 @@ body {
   color: #fff;
 }
 
+.header_booknow {
+  display: flex;
+  align-items: center;
+}
+
 .header_booknow_wrap_button {
   background-color: var(--button-color);
   border: none;
@@ -179,8 +184,17 @@ body {
   display: none;
 }
 
+/* стили планшета */
+@media screen and (max-width: 1024px) {
+  .header {
+    background-position: center;
+  }
+}
 /* стили мобилки */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
+  .header {
+    background-position: center;
+  }
   .header_scroll_name {
     display: none;
   }
