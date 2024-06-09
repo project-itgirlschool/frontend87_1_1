@@ -189,6 +189,20 @@ body {
   .header {
     background-position: center;
   }
+  .header_welcometo {
+    font-size: 5.2vw;
+  }
+  .header_luxury {
+    font-size: 16vw;
+    letter-spacing: 0.07em;
+  }
+  .hotels {
+    font-size: 6.2vw;
+    letter-spacing: 0.4em;
+  }
+  .book_your_stay {
+    font-size: 2.6vw;
+  }
 }
 /* стили мобилки */
 @media screen and (max-width: 430px) {
