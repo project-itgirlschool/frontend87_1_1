@@ -106,12 +106,20 @@ body {
   height: 26px;
 }
 
+.header_booknow_wrap_button:hover {
+  opacity: 0.8;
+}
+
 .header_booknow_text {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 25px;
   color: #fff;
   padding-left: 5px;
+}
+
+.header_booknow_link {
+  text-decoration: none;
 }
 
 .menu-list {
@@ -134,7 +142,7 @@ body {
   margin: auto;
 }
 
-a:hover {
+.menu-item:hover {
   color: rgba(255, 255, 255, 0.537254902);
   text-decoration: underline;
 }
