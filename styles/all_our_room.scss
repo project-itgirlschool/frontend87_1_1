@@ -17,12 +17,10 @@ h2{
     margin: 0 auto;
     padding: 2.5%;
     width: 80%;
-    // max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    overflow-x: hidden;
-    // padding: 5rem 0;
+    overflow: hidden;
 }
 
 .contentWrapper{
@@ -52,13 +50,12 @@ h2{
 
 .main .contentWrapper span.textWrapper{
     font-family: var(--main-font);
-    display: block;
     // font-size: 60px;
     font-size: 3.2vw;
     text-transform: capitalize;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    // align-items: center;
     gap: 15px;
     margin-bottom: 20px;
 }
@@ -84,9 +81,23 @@ h2{
     border-radius: 8px;
 }
 
+//   .main .contentWrapper .button{
+//     text-transform: uppercase;
+//     background: var(--button-color); 
+//     color: white;
+//     padding:15px 40px;
+//     letter-spacing: 1px;
+//     user-select: none;
+//     border-radius: 8px;
+//     border: none;
+//     cursor: pointer;
+//   }
+
+
 .main .contentWrapper a:hover{
     color: red;
 }
+
 
 @media (max-width: 865px){
     .main{
