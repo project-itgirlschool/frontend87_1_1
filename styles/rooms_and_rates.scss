@@ -1,0 +1,143 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1604px;
+}
+
+.rooms-and-rates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rooms-and-rates_title_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.rooms-and-rates_title {
+  width: 100%;
+  font-weight: 700;
+  font-size: calc(25px + (20 + 20 * 0.7) * (100vw - 320px) / 1600);
+  text-align: center;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.rooms-and-rates_text {
+  max-width: 1305px;
+  font-weight: 400;
+  font-size: calc(16px + (5 + 5 * 0.7) * (100vw - 320px) / 1600);
+  text-align: center;
+  color: var(--text-color);
+  margin: 20px 30px auto;
+}
+
+.rooms-and-rates_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0;
+  max-width: 1600px;
+  margin-top: 10px;
+}
+
+.wrapper_picture {
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rooms-and-rates_wrapper_title {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: calc(16px + (16 + 16 * 0.7) * (100vw - 320px) / 1600);
+  color: #fff;
+  background-color: var(--text-color);
+  text-transform: uppercase;
+  padding: 14px;
+}
+
+.rooms-and-rates_wrapper_price {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  border: 1px solid #14274a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.view_details {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.button_view_details {
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--button-color);
+  cursor: pointer;
+  border: none;
+  margin: 1em;
+}
+
+.button_view_details::after {
+  font-size: 50px;
+  content: "+";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button_view_details:hover {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.rooms-and-rates_wrapper_link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: calc(12px + (12 + 12 * 0.7) * (100vw - 320px) / 1600);
+  text-align: center;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.rooms-and-rates_wrapper_link:hover {
+  color: darkblue;
+}
+
+.button_price {
+  padding: 10px;
+  border-radius: 7px;
+  background-color: var(--button-color);
+  color: #fff;
+  font-size: calc(12px + (12 + 12 * 0.7) * (100vw - 320px) / 1600);
+  margin: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.button_price:hover {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+  color: var(--text-color);
+}
+
+.wrapper_picture {
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 20px;
+}
