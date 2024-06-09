@@ -119,19 +119,28 @@ h2 {
 .main .imgWrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .main .imgWrapper:hover img {
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .main .contentWrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .contentWrapper span.textWrapper {
@@ -139,9 +148,15 @@ h2 {
   display: block;
   font-size: 3.2vw;
   text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -161,7 +176,10 @@ h2 {
   color: white;
   padding: 15px 40px;
   letter-spacing: 1px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-radius: 8px;
 }
 
@@ -217,7 +235,8 @@ h2 {
 }
 
 .testimonials_btn:hover {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .testimonials_previous-next {
@@ -235,9 +254,15 @@ footer {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .items_wrapper {
@@ -253,6 +278,7 @@ footer {
   text-decoration: none;
   margin: 5px;
   display: inline-block;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -338,6 +364,7 @@ footer {
   color: #14274a;
   font-size: 1rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -445,7 +472,9 @@ footer {
     grid-column: 2/4;
     grid-row: 4/5;
     justify-self: center;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .email-form input {
     padding: 3px;
@@ -460,7 +489,8 @@ footer {
 * {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -469,15 +499,27 @@ body {
 }
 
 .rooms-and-rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 
 .rooms-and-rates_title_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .rooms-and-rates_title {
@@ -499,9 +541,16 @@ body {
 }
 
 .rooms-and-rates_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 0;
   max-width: 1600px;
   margin-top: 10px;
@@ -526,8 +575,11 @@ body {
 }
 
 .rooms-and-rates_wrapper_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0;
   border: 1px solid #14274a;
   border-bottom-left-radius: 10px;
@@ -536,8 +588,12 @@ body {
 
 .view_details {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button_view_details {
@@ -558,11 +614,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .button_view_details:hover {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .rooms-and-rates_wrapper_link {
@@ -590,7 +648,8 @@ body {
 }
 
 .button_price:hover {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
   color: var(--text-color);
 }
 
@@ -604,7 +663,8 @@ body {
 * {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -613,6 +673,4 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
