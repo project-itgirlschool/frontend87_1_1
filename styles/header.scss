@@ -1,5 +1,6 @@
 .header {
   background-image: url(../../assets/pictures/header_firstpage.png);
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -28,6 +29,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
+  justify-content: space-between;
 }
 
 .header_welcometo {
@@ -63,6 +65,7 @@
 .header_booknow {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header_booknow_wrap_button {
   background-color: var(--button-color);
@@ -85,6 +88,7 @@
 }
 .header_booknow_wrap_button:hover {
   opacity: 0.8;
+  transition: all 0.3s;
 }
 
 .header_booknow_text {
@@ -97,11 +101,13 @@
 .header_booknow_link {
   text-decoration: none;
 }
+
 .menu-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   padding: 59px 0;
+  white-space: nowrap;
 }
 
 .menu-item {
@@ -209,7 +215,7 @@
     position: relative;
     border: none;
     background: transparent;
-    width: 40px;
+    width: 26px;
     height: 26px;
   }
   .burger::before,
@@ -243,14 +249,16 @@
     transform: rotate(-45deg);
     transition: bottom 0.3s, transform 0.3s 0.15s;
   }
+
   .menu-list {
     top: 0;
     left: 0;
     position: absolute;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     gap: 12px;
-    padding: 42px 0;
+    padding: 20px 0;
     margin: 0;
     background: #ffffff7c;
     list-style-type: none;
@@ -262,7 +270,7 @@
     display: block;
     padding: 8px;
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     text-decoration: none;
   }
@@ -271,5 +279,6 @@
   }
   .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
+    width: 100%;
   }
 }
